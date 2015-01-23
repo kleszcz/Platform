@@ -1,0 +1,9 @@
+*.csproj
+*.meta
+*.db
+*.sln
+*.suo
+[Ll]ibrary/
+[Aa]ssets/
+[Tt]emp/
+[Oo]bj/

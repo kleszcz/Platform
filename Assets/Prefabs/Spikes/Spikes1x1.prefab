@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 410584}
   - 61: {fileID: 6110584}
   - 114: {fileID: 11416662}
-  m_Layer: 12
+  m_Layer: 8
   m_Name: spikes_sprites
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 410588}
   - 212: {fileID: 21210584}
-  m_Layer: 12
+  m_Layer: 8
   m_Name: triangle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57,7 +57,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 410590}
   - 212: {fileID: 21210586}
-  m_Layer: 12
+  m_Layer: 8
   m_Name: triangle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 110586}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.11999989, y: -4.5, z: 0}
+  m_LocalPosition: {x: -4.19999981, y: 2.33999991, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 410584}
@@ -178,6 +178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b80b92e19c6e34b478b003cf2ca6208c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 1
 --- !u!212 &21210584
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -19,18 +19,9 @@ namespace PlatformEngine
 		{
 			//Input
 			float h = 0f;
-			float v = 0f;
-			h = Input.GetAxis("Horizontal");
-
-			if (player.Climbing)
-			{
-				v = Input.GetAxis("Vertical");
-				if (player.ClimbTop && v > 0)
-					v = 0;
-			}
-		
+			h = Input.GetAxis("Horizontal");								
 			bool jump = Input.GetButton("Jump");
-			player.Move(h, v, jump);
+			player.Move(h, jump);
 		}
 	}
 }

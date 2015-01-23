@@ -1,0 +1,146 @@
+fileFormatVersion: 2
+guid: d28472325e7b5064b9e733f34315d27a
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: octo_body
+    21300002: octo_left_eye
+    21300004: octo_right_eye
+    21300006: octo_smile
+    21300008: octo_leg_1
+    21300010: octo_leg_2
+    21300012: octo_leg_3
+    21300014: octo_leg_4
+    21300016: octo_leg_5
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 200
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: octo_body
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 102
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: octo_left_eye
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 211
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: octo_right_eye
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 214
+        width: 14
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: octo_smile
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 169
+        width: 50
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: octo_leg_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 101
+        height: 75
+      alignment: 9
+      pivot: {x: .939999998, y: .529999971}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: octo_leg_2
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 21
+        width: 39
+        height: 70
+      alignment: 9
+      pivot: {x: .5, y: .180000007}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: octo_leg_3
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 28
+        width: 33
+        height: 63
+      alignment: 9
+      pivot: {x: .569999993, y: .0900000036}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: octo_leg_4
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 0
+        width: 35
+        height: 92
+      alignment: 9
+      pivot: {x: .5, y: .0900000036}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: octo_leg_5
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 16
+        width: 124
+        height: 75
+      alignment: 9
+      pivot: {x: .119999997, y: .330000013}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

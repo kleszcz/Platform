@@ -4,6 +4,7 @@ using System.Collections;
 
 namespace PlatformEngine
 {
+	//[ExecuteInEditMode]
 	public class PlayerControler : MonoBehaviour
 	{
 
@@ -22,13 +23,9 @@ namespace PlatformEngine
 		[SerializeField]
 		private bool grounded = false;
 
-		private Transform bodyCheck;
-		private float bodyRadius = .1f;
-		
 		private void Awake()
 		{
 			groundCheck = transform.Find("GroundCheck");
-			bodyCheck = transform.Find("BodyCheck");
 		}
 		
 		// Update is called once per frame
@@ -50,6 +47,12 @@ namespace PlatformEngine
 				grounded = false;
 				rigidbody2D.AddForce(new Vector2(0f, jumpForce));
 			}
-		}		
+		}
+
+		//void OnDrawGizmos()
+		//{
+		//	Gizmos.color = Color.red;
+		//	Gizmos.DrawSphere(groundCheck.position, groundedRadius);
+		//}
 	}
 }

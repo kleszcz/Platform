@@ -26,11 +26,11 @@ namespace PlatformEngine
 			anim.SetBool("Ground", ground);
 		}
 
-		public static void UpdateLadder(bool ladder)
+		public static void UpdateDamage(bool damage)
 		{
 			if (anim == null)
 				return;
-			anim.SetBool("Ladder", ladder);
+			anim.SetBool("Damage", damage);
 		}
 
 	}

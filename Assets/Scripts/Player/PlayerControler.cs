@@ -4,7 +4,6 @@ using System.Collections;
 
 namespace PlatformEngine
 {
-	//[ExecuteInEditMode]
 	public class PlayerControler : MonoBehaviour
 	{
 
@@ -16,12 +15,13 @@ namespace PlatformEngine
 		private LayerMask whatIsGround;
 		[SerializeField] 
 		private bool airControl;
-
-				
+						
 		private Transform groundCheck;
+		[SerializeField]
 		private float groundedRadius = .2f;
 		[SerializeField]
 		private bool grounded = false;
+	
 
 		private void Awake()
 		{
@@ -32,6 +32,12 @@ namespace PlatformEngine
 		void FixedUpdate()
 		{
 			grounded = Physics2D.OverlapCircle(groundCheck.position, groundedRadius, whatIsGround);
+			
+			Debug.DrawLine(groundCheck.position, groundCheck.position - new Vector3(groundedRadius, 0, 0), Color.red);
+			Debug.DrawLine(groundCheck.position, groundCheck.position + new Vector3(groundedRadius, 0, 0), Color.red);
+			Debug.DrawLine(groundCheck.position, groundCheck.position - new Vector3(0, groundedRadius, 0), Color.red);
+			Debug.DrawLine(groundCheck.position, groundCheck.position + new Vector3(0, groundedRadius, 0), Color.red);
+			
 			PlayerAnimation.UpdateGround(grounded);
 		}
 		
@@ -49,10 +55,5 @@ namespace PlatformEngine
 			}
 		}
 
-		//void OnDrawGizmos()
-		//{
-		//	Gizmos.color = Color.red;
-		//	Gizmos.DrawSphere(groundCheck.position, groundedRadius);
-		//}
 	}
 }

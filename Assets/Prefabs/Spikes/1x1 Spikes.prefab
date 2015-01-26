@@ -26,7 +26,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 410586}
   m_Layer: 12
-  m_Name: Spikes1x1
+  m_Name: 1x1 Spikes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42,7 +42,7 @@ GameObject:
   - 4: {fileID: 410588}
   - 212: {fileID: 21210584}
   m_Layer: 8
-  m_Name: triangle
+  m_Name: spike
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -58,7 +58,7 @@ GameObject:
   - 4: {fileID: 410590}
   - 212: {fileID: 21210586}
   m_Layer: 8
-  m_Name: triangle
+  m_Name: spike
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -88,8 +88,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 110584}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
-  m_LocalScale: {x: 1, y: .600000024, z: 1}
+  m_LocalPosition: {x: 0, y: .25, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 410590}
   - {fileID: 410588}
@@ -102,7 +102,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 110586}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1.91999996, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 410584}
@@ -117,7 +117,7 @@ Transform:
   m_GameObject: {fileID: 110588}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .319999993, y: 0, z: 0}
-  m_LocalScale: {x: .25, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 410584}
   m_RootOrder: 1
@@ -129,7 +129,7 @@ Transform:
   m_GameObject: {fileID: 110590}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -.319999993, y: 0, z: 0}
-  m_LocalScale: {x: .25, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 410584}
   m_RootOrder: 0
@@ -154,8 +154,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: .582891166, y: 1.0962553}
-  m_Center: {x: 0, y: -.0962557793}
+  m_Size: {x: .639999986, y: .600000024}
+  m_Center: {x: 0, y: .300000012}
 --- !u!61 &6110586
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -165,7 +165,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 1.27999997, y: 1.27999997}
+  m_Size: {x: 1.27999997, y: .5}
   m_Center: {x: 0, y: 0}
 --- !u!114 &11416662
 MonoBehaviour:
@@ -199,7 +199,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 333da7d9ccbec7c4cbc1a5d10cfab952, type: 3}
+  m_Sprite: {fileID: 21300002, guid: 087e8f542c924424fa74ad895463bfc0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &21210586
 SpriteRenderer:
@@ -221,7 +221,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 333da7d9ccbec7c4cbc1a5d10cfab952, type: 3}
+  m_Sprite: {fileID: 21300002, guid: 087e8f542c924424fa74ad895463bfc0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &21210588
 SpriteRenderer:
@@ -243,7 +243,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: cdd9a22af33827c4ebc2dc7ba073b4f4, type: 3}
+  m_Sprite: {fileID: 21300004, guid: 087e8f542c924424fa74ad895463bfc0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

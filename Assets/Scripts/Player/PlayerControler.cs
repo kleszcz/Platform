@@ -32,13 +32,11 @@ namespace PlatformEngine
 		void FixedUpdate()
 		{
 			grounded = Physics2D.OverlapCircle(groundCheck.position, groundedRadius, whatIsGround);
-			
-			Debug.DrawLine(groundCheck.position, groundCheck.position - new Vector3(groundedRadius, 0, 0), Color.red);
-			Debug.DrawLine(groundCheck.position, groundCheck.position + new Vector3(groundedRadius, 0, 0), Color.red);
-			Debug.DrawLine(groundCheck.position, groundCheck.position - new Vector3(0, groundedRadius, 0), Color.red);
-			Debug.DrawLine(groundCheck.position, groundCheck.position + new Vector3(0, groundedRadius, 0), Color.red);
-			
 			PlayerAnimation.UpdateGround(grounded);
+			Collider2D enemy = Physics2D.OverlapCircle(groundCheck.position, groundedRadius, 1 << LayerMask.NameToLayer("Enemy"));
+			if(enemy != null && enemy.tag == "Enemy")
+				enemy.gameObject.SetActive(false); // todo fix it for respawn	
+
 		}
 		
 		public void Move(float moveHorizontal, bool jump)
@@ -52,6 +50,15 @@ namespace PlatformEngine
 			{				
 				grounded = false;
 				rigidbody2D.AddForce(new Vector2(0f, jumpForce));
+			}
+		}
+
+		void OnDrawGizmos()
+		{
+			if (groundCheck != null)
+			{
+				Gizmos.color = Color.red;
+				Gizmos.DrawWireSphere(groundCheck.position, groundedRadius);
 			}
 		}
 

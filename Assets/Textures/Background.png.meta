@@ -5,6 +5,10 @@ TextureImporter:
     21300000: Background_far
     21300002: Background_mid
     21300004: Background_near
+    21300006: ArrowsText
+    21300008: Arrows
+    21300010: Space
+    21300012: Careful
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -40,41 +44,51 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 50
+  spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Background_far
+    - name: ArrowsText
       rect:
         serializedVersion: 2
-        x: 0
-        y: 768
-        width: 1024
-        height: 256
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 22
+        y: 892
+        width: 921
+        height: 112
+      alignment: 4
+      pivot: {x: 0, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Background_mid
+    - name: Arrows
       rect:
         serializedVersion: 2
-        x: 0
-        y: 512
-        width: 1024
-        height: 148
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 20
+        y: 613
+        width: 545
+        height: 266
+      alignment: 4
+      pivot: {x: 0, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Background_near
+    - name: Space
       rect:
         serializedVersion: 2
-        x: 0
-        y: 257
-        width: 1024
-        height: 137
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        x: 22
+        y: 325
+        width: 547
+        height: 267
+      alignment: 4
+      pivot: {x: 0, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Careful
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 206
+        width: 554
+        height: 107
+      alignment: 4
+      pivot: {x: 0, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

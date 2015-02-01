@@ -8,6 +8,12 @@ namespace PlatformEngine
 		[SerializeField]
 		private Animator anim;
 
+		void Awake()
+		{
+
+			anim = transform.FindChild("spikes_sprites").GetComponent<Animator>();
+		}
+
 		void OnTriggerEnter2D(Collider2D collider)
 		{
 			anim.SetBool("Show", true);

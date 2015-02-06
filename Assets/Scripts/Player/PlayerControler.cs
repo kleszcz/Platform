@@ -4,6 +4,7 @@ using System.Collections;
 
 namespace PlatformEngine
 {
+	[ExecuteInEditMode]
 	public class PlayerControler : MonoBehaviour
 	{
 
@@ -21,7 +22,9 @@ namespace PlatformEngine
 		private float groundedRadius = .2f;
 		[SerializeField]
 		private bool grounded = false;
-	
+		private bool onMovingPlatform = false;
+		private Collider2D movingPlatform = null;
+		private Vector3 movingPlatformLastPosition;
 
 		private void Awake()
 		{
@@ -32,11 +35,31 @@ namespace PlatformEngine
 		void FixedUpdate()
 		{
 			grounded = Physics2D.OverlapCircle(groundCheck.position, groundedRadius, whatIsGround);
+			movingPlatform = Physics2D.OverlapCircle(groundCheck.position, groundedRadius, 1 << LayerMask.NameToLayer("MovingPlatform"));
+			if (movingPlatform != null)
+			{
+				onMovingPlatform = true;
+				movingPlatformLastPosition = movingPlatform.transform.position;
+			}
+			else
+				onMovingPlatform = false;
+
 			PlayerAnimation.UpdateGround(grounded);
 			Collider2D enemy = Physics2D.OverlapCircle(groundCheck.position, groundedRadius, 1 << LayerMask.NameToLayer("Enemy"));
 			if(enemy != null && enemy.tag == "Enemy")
 				enemy.gameObject.SetActive(false); // todo fix it for respawn	
 
+		}
+
+		void LateUpdate()
+		{
+			if (onMovingPlatform)
+			{
+				Vector3 diff = movingPlatform.transform.position - movingPlatformLastPosition;
+				diff.z = 0f;
+				transform.position = transform.position + diff;
+				movingPlatformLastPosition = movingPlatform.transform.position;
+			}
 		}
 		
 		public void Move(float moveHorizontal, bool jump)

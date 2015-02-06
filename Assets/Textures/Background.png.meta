@@ -9,6 +9,10 @@ TextureImporter:
     21300008: Arrows
     21300010: Space
     21300012: Careful
+    21300014: Enemy
+    21300016: Fall
+    21300018: Up
+    21300020: Arrow
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -89,6 +93,46 @@ TextureImporter:
         height: 107
       alignment: 4
       pivot: {x: 0, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Enemy
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 575
+        width: 374
+        height: 279
+      alignment: 4
+      pivot: {x: 0, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Fall
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 308
+        width: 314
+        height: 219
+      alignment: 4
+      pivot: {x: 0, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Up
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 158
+        width: 253
+        height: 130
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Arrow
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 688
+        width: 113
+        height: 113
+      alignment: 9
+      pivot: {x: .340000004, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

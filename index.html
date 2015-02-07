@@ -17,10 +17,11 @@
 		<!--
 			var config = {
 				width: 800, 
-				height: 600,
+				height: 450,
 				params: { enableDebugging:"0" }
 				
 			};
+			config.params["disableContextMenu"] = true;
 			var u = new UnityObject2(config);
 			
 			jQuery(function() {
@@ -57,13 +58,13 @@
 						break;
 					}
 				});
-				u.initPlugin(jQuery("#unityPlayer")[0], "bin/bin.unity3d");
+				u.initPlugin(jQuery("#unityPlayer")[0], "bin.unity3d");
 			});
 		-->
 		</script>
 		<style type="text/css">
 		<!--
-		body {
+				body {
 			font-family: Helvetica, Verdana, Arial, sans-serif;
 			background-color: white;
 			color: black;

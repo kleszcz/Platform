@@ -7,7 +7,7 @@ public class MenuGUI : MonoBehaviour {
 	{
 		if (GUILayout.Button("Start"))
 		{
-			Application.LoadLevel("level");
+			Application.LoadLevel((Application.loadedLevel + 1) % Application.levelCount);
 		}
 		if (GUILayout.Button("Close"))
 		{
